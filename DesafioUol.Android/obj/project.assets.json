@@ -1916,11 +1916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.Android/DesafioUol.Android.csproj",
+      "projectUniqueName": "/Users/gustavonielsen/repository/TesteUol/DesafioUol.Android/DesafioUol.Android.csproj",
       "projectName": "DesafioUol.Android",
-      "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.Android/DesafioUol.Android.csproj",
+      "projectPath": "/Users/gustavonielsen/repository/TesteUol/DesafioUol.Android/DesafioUol.Android.csproj",
       "packagesPath": "/Users/gustavonielsen/.nuget/packages/",
-      "outputPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.Android/obj/",
+      "outputPath": "/Users/gustavonielsen/repository/TesteUol/DesafioUol.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1935,8 +1935,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj": {
-              "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj"
+            "/Users/gustavonielsen/repository/TesteUol/DesafioUol/DesafioUol.csproj": {
+              "projectPath": "/Users/gustavonielsen/repository/TesteUol/DesafioUol/DesafioUol.csproj"
             }
           }
         }

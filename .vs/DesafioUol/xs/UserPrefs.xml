@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{B66E3CFA-E9C6-4855-978E-CE6366608031}|Default">
+  <MonoDevelop.Ide.ItemProperties.DesafioUol.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DesafioUol" expanded="True">
+            <Node name="DesafioUol" expanded="True">
+              <Node name="Helpers" expanded="True">
+                <Node name="AppConstants.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

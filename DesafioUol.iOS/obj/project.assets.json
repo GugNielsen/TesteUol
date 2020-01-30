@@ -1010,11 +1010,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.iOS/DesafioUol.iOS.csproj",
+      "projectUniqueName": "/Users/gustavonielsen/repository/TesteUol/DesafioUol.iOS/DesafioUol.iOS.csproj",
       "projectName": "DesafioUol.iOS",
-      "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.iOS/DesafioUol.iOS.csproj",
+      "projectPath": "/Users/gustavonielsen/repository/TesteUol/DesafioUol.iOS/DesafioUol.iOS.csproj",
       "packagesPath": "/Users/gustavonielsen/.nuget/packages/",
-      "outputPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.iOS/obj/",
+      "outputPath": "/Users/gustavonielsen/repository/TesteUol/DesafioUol.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1029,8 +1029,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj": {
-              "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj"
+            "/Users/gustavonielsen/repository/TesteUol/DesafioUol/DesafioUol.csproj": {
+              "projectPath": "/Users/gustavonielsen/repository/TesteUol/DesafioUol/DesafioUol.csproj"
             }
           }
         }

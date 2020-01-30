@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj": {}
+    "/Users/gustavonielsen/repository/TesteUol/DesafioUol/DesafioUol.csproj": {}
   },
   "projects": {
-    "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj": {
+    "/Users/gustavonielsen/repository/TesteUol/DesafioUol/DesafioUol.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj",
+        "projectUniqueName": "/Users/gustavonielsen/repository/TesteUol/DesafioUol/DesafioUol.csproj",
         "projectName": "DesafioUol",
-        "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj",
+        "projectPath": "/Users/gustavonielsen/repository/TesteUol/DesafioUol/DesafioUol.csproj",
         "packagesPath": "/Users/gustavonielsen/.nuget/packages/",
-        "outputPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/obj/",
+        "outputPath": "/Users/gustavonielsen/repository/TesteUol/DesafioUol/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gustavonielsen/.config/NuGet/NuGet.Config"
