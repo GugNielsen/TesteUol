@@ -1,5 +1,5 @@
 ﻿using System;
-namespace DesafioUol.Helpers
+namespace TesteUol.Helpers
 {
     public static class AppConstants
     {

@@ -2162,11 +2162,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gustavonielsen/Projects/TesteUol/TesteUol.Android/TesteUol.Android.csproj",
+      "projectUniqueName": "/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/TesteUol.Android.csproj",
       "projectName": "TesteUol.Android",
-      "projectPath": "/Users/gustavonielsen/Projects/TesteUol/TesteUol.Android/TesteUol.Android.csproj",
+      "projectPath": "/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/TesteUol.Android.csproj",
       "packagesPath": "/Users/gustavonielsen/.nuget/packages/",
-      "outputPath": "/Users/gustavonielsen/Projects/TesteUol/TesteUol.Android/obj/",
+      "outputPath": "/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
