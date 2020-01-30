@@ -36,11 +36,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)Abstractions\IRestService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\ModelBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\RestServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\Enums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TempoViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)ModelsDtos\" />
     <Folder Include="$(MSBuildThisFileDirectory)ModelsDtos\ServicesApi\" />
     <Folder Include="$(MSBuildThisFileDirectory)Abstractions\" />
     <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Enums\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
   </ItemGroup>
 </Project>
