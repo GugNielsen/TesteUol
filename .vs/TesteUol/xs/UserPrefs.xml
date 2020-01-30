@@ -1,8 +1,5 @@
 ﻿<Properties StartupConfiguration="{2DAF35CF-5216-49AB-84A0-19F6F6D213EC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/Helpers/AppConstants.cs">
-    <Files>
-      <File FileName="TesteUol/Helpers/AppConstants.cs" Line="8" Column="41" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -11,6 +8,7 @@
               <Node name="Helpers" expanded="True">
                 <Node name="AppConstants.cs" selected="True" />
               </Node>
+              <Node name="ModelsDtos" expanded="True" />
             </Node>
           </Node>
         </State>

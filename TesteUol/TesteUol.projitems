@@ -21,5 +21,18 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\AppConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\baseModelDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\TempoDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\AlertDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\CurrentlyDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\DailyDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\DailyDatum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\Flags.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\HourlyDtos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\MinutelyDtos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\MinutelyDatum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)ModelsDtos\" />
   </ItemGroup>
 </Project>
