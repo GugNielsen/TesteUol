@@ -42,3 +42,4 @@ Xamarin.Forms.Platform
 Prism.Forms
 Microsoft.AppCenter.Android.Bindings
 Microsoft.AppCenter
+Plugin.Connectivity

@@ -5,10 +5,15 @@
         <State name="__root__">
           <Node name="TesteUol" expanded="True">
             <Node name="TesteUol" expanded="True">
-              <Node name="Helpers" expanded="True" />
-              <Node name="ModelsDtos" expanded="True">
-                <Node name="ServicesApi" expanded="True" />
+              <Node name="Abstractions" expanded="True">
+                <Node name="IConnectivityService.cs" selected="True" />
               </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="TesteUol.Android" expanded="True" />
+            <Node name="TesteUol.iOS" expanded="True">
+              <Node name="Packages" expanded="True" />
             </Node>
           </Node>
         </State>

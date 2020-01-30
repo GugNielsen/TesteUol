@@ -31,9 +31,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\MinutelyDtos.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\MinutelyDatum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\ServicesApi\GeralServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Abstractions\IConnectivityService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ConnectivityService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Abstractions\IRestService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelsDtos\ModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\RestServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)ModelsDtos\" />
     <Folder Include="$(MSBuildThisFileDirectory)ModelsDtos\ServicesApi\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Abstractions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
   </ItemGroup>
 </Project>

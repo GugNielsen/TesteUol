@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace TesteUol.ModelsDtos
 {
    
-        public partial class Currently
+        public class Currently : ModelBase
         {
             [JsonProperty("time")]
             public long Time { get; set; }
