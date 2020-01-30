@@ -5,10 +5,10 @@
         <State name="__root__">
           <Node name="TesteUol" expanded="True">
             <Node name="TesteUol" expanded="True">
-              <Node name="Helpers" expanded="True">
-                <Node name="AppConstants.cs" selected="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="ModelsDtos" expanded="True">
+                <Node name="ServicesApi" expanded="True" />
               </Node>
-              <Node name="ModelsDtos" expanded="True" />
             </Node>
           </Node>
         </State>
