@@ -1,21 +1,16 @@
 ﻿<Properties StartupConfiguration="{2DAF35CF-5216-49AB-84A0-19F6F6D213EC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/App.xaml.cs">
-    <Files>
-      <File FileName="TesteUol/App.xaml.cs" Line="26" Column="85" />
-      <File FileName="TesteUol/Abstractions/IConnectivityService.cs" Line="8" Column="68" />
-      <File FileName="TesteUol/Services/ConnectivityService.cs" Line="17" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TesteUol" expanded="True">
             <Node name="TesteUol" expanded="True">
-              <Node name="Abstractions" expanded="True" />
+              <Node name="Abstractions" expanded="True">
+                <Node name="IRestService.cs" selected="True" />
+              </Node>
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
-              <Node name="App.xaml" expanded="True">
-                <Node name="App.xaml.cs" selected="True" />
-              </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
             <Node name="TesteUol.Android" expanded="True">
               <Node name="Packages" expanded="True" />

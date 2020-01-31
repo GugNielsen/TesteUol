@@ -25,6 +25,7 @@ namespace TesteUol
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.Register<IConnectivityService, ConnectivityService>();
+            containerRegistry.Register<IRestService, RestServices>();
         }
 
         protected override void OnStart()
