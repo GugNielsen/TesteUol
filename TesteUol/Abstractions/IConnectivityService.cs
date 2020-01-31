@@ -5,6 +5,6 @@ namespace TesteUol.Abstractions
 {
     public interface IConnectivityService
     {
-       public Task<bool> IsRemoteReachable(string host, int port);
+        Task<bool>IsRemoteReachable(string host, int port);
     }
 }
