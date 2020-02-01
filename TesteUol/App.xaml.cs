@@ -4,6 +4,8 @@ using Prism.DryIoc;
 using Prism.Ioc;
 using TesteUol.Abstractions;
 using TesteUol.Services;
+using TesteUol.ViewModels;
+using TesteUol.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,11 +21,14 @@ namespace TesteUol
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync("MainPage");
+            NavigationService.NavigateAsync("TempoPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            // Views Models/ Views
+            containerRegistry.RegisterForNavigation<TempoPage, TempoViewModel>();
+
             containerRegistry.Register<IConnectivityService, ConnectivityService>();
             containerRegistry.Register<IRestService, RestServices>();
         }
