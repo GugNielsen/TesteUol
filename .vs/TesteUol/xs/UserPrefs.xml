@@ -1,14 +1,8 @@
 ﻿<Properties StartupConfiguration="{8C2B4ACB-4DB9-4185-9B60-F0CAB8490E83}|Default">
   <MonoDevelop.Ide.ItemProperties.TesteUol.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.47573F4F-A8C3-4897-A072-4889718E25C7" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/Services/RestClient.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/Views/Teste2.xaml">
     <Files>
-      <File FileName="TesteUol/Views/Teste2.xaml.cs" Line="5" Column="24" />
-      <File FileName="TesteUol/ViewModels/TempoViewModel.cs" Line="73" Column="14" />
-      <File FileName="TesteUol/Entities/ForecastIORequest.cs" Line="30" Column="21" />
-      <File FileName="TesteUol/Entities/ForecastIOException.cs" Line="1" Column="1" />
-      <File FileName="TesteUol/Entities/ForecastIOResponse.cs" Line="6" Column="23" />
-      <File FileName="TesteUol/ViewModels/ViewModelBase.cs" Line="26" Column="12" />
-      <File FileName="TesteUol/Services/RestClient.cs" Line="26" Column="1" />
+      <File FileName="TesteUol/Views/Teste2.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,12 +12,11 @@
               <Node name="Entities" expanded="True" />
               <Node name="Extensions" expanded="True" />
               <Node name="Helpers" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="RestClient.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Teste2.xaml" expanded="True" />
+                <Node name="TempoPage.xaml" expanded="True" />
+                <Node name="Teste2.xaml" expanded="True" selected="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
             </Node>
@@ -43,13 +36,9 @@
   <MonoDevelop.Ide.ItemProperties.TesteUol.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/ViewModels/TempoViewModel.cs" relfile="TesteUol/ViewModels/TempoViewModel.cs" line="66" column="1" />
-      <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/ViewModels/TempoViewModel.cs" relfile="TesteUol/ViewModels/TempoViewModel.cs" line="59" column="1" />
       <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/Services/RestServices.cs" relfile="TesteUol/Services/RestServices.cs" line="23" column="1" />
       <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/Services/RestClient.cs" relfile="TesteUol/Services/RestClient.cs" line="29" column="1" />
       <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/Services/RestClient.cs" relfile="TesteUol/Services/RestClient.cs" line="27" column="1" />
-      <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/Entities/ForecastIORequest.cs" relfile="TesteUol/Entities/ForecastIORequest.cs" line="54" column="1" />
-      <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/ViewModels/TempoViewModel.cs" relfile="TesteUol/ViewModels/TempoViewModel.cs" line="75" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
