@@ -3,7 +3,7 @@ using Prism.Commands;
 using Prism.Mvvm; using Prism.Navigation; using Prism.Services;
 using System;
 using System.Collections.Generic; using System.Threading.Tasks;
-using TesteUol.ModelsDtos;
+using TesteUol.Entities;
 
 namespace TesteUol.ViewModels {
 	public abstract class ViewModelBase : BindableBase, IDestructible, INavigationAware, IConfirmNavigation, IApplicationLifecycleAware, IPageLifecycleAware
@@ -14,12 +14,12 @@ namespace TesteUol.ViewModels {
 		protected IPageDialogService _pageDialogService;
 		protected bool _workOffLine = false;
 
-        private Tempo _timeZone;
-        public Tempo Timezone
-        {
-            get { return _timeZone; }
-            set { SetProperty(ref _timeZone, value); }
-        }
+        //private Tempo _timeZone;
+        //public Tempo Timezone
+        //{
+        //    get { return _timeZone; }
+        //    set { SetProperty(ref _timeZone, value); }
+        //}
 
 
         /// <param name="navigationService">Navigation service.</param>
@@ -29,13 +29,10 @@ namespace TesteUol.ViewModels {
 		}
 
 
-		private Task<bool> taskInit;
-		protected Task<bool> TaskInit { get => taskInit; set => taskInit = value; }
-
-		
+        protected Task _taskInit { get; set; }
 
 
-		bool _isPtBr;
+        bool _isPtBr;
 		/// <summary>
 		/// Gets a value indicating whether this <see cref="T:DNAModelApp.ViewModels.ViewModelBase"/> culture is pt-BR.
 		/// </summary>

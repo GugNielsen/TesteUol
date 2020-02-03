@@ -21,16 +21,19 @@ namespace TesteUol
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync("TempoPage");
+            NavigationService.NavigateAsync("Teste2");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             // Views Models/ Views
             containerRegistry.RegisterForNavigation<TempoPage, TempoViewModel>();
+            containerRegistry.RegisterForNavigation<TestePage, TempoViewModel>();
+            containerRegistry.RegisterForNavigation<Teste2, TempoViewModel>();
+
 
             containerRegistry.Register<IConnectivityService, ConnectivityService>();
-            containerRegistry.Register<IRestService, RestServices>();
+            //containerRegistry.Register<IRestService, RestServices>();
         }
 
         protected override void OnStart()

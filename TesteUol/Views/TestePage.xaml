@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TesteUol.Views.TestePage"
+    xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+    xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation">
+ <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <xamanimation:StoryBoard
+                x:Key="InfoPanelAnimation"
+                Target="{x:Reference InfoPanel}">
+                <xamanimation:FadeToAnimation
+                    Duration="50"
+                    Opacity="1" />
+                <xamanimation:TranslateToAnimation
+                    TranslateY="0"
+                    Easing="CubicIn"
+                    Duration="100" />
+            </xamanimation:StoryBoard>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid
+        x:Name="MainPanel">
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="2.5*" />
+            <RowDefinition
+                Height="*" />
+        </Grid.RowDefinitions>
+        <forms:AnimationView
+            x:Name="LottieAnimation"
+            Grid.Row="0"
+            Animation="chuva.json"
+            AutoPlay="true"
+            Loop="True"
+            Speed="1"
+            Scale="1"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand" />
+        <StackLayout
+            x:Name="InfoPanel"
+            Padding="0,-24,0,0"
+            Grid.Row="1"
+            VerticalOptions="Start"
+            Opacity="0"
+            TranslationY="250">
+            <Label
+                Text="Lorem ipsum" />
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span
+                            Text="Lorem ipsum dolor sit amet" />
+                        <Span
+                            Text="consectetur adipiscing elit, sed do eiusmod " />
+                        <Span
+                            Text="tempor incididunt ut labore et dolore magna aliqua." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </Grid>  
+
+</ContentPage>

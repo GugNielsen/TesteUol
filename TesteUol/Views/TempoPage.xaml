@@ -11,8 +11,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <!--<Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>-->
-        <StackLayout Orientation="Vertical" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
+        <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
+        <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
             <ImageButton Source="menu.png" WidthRequest="23" HeightRequest="15" HorizontalOptions="Start" VerticalOptions="Center" />
             <Label Text="LONDON, GB" FontSize="16" VerticalOptions="Center" TextColor="White"/>
         </StackLayout>
