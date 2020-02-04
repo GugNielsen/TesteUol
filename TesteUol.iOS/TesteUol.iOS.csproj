@@ -163,6 +163,21 @@
     <BundleResource Include="Resources\raining.json" />
     <BundleResource Include="Resources\rainynight.json" />
     <BundleResource Include="Resources\chuva.json" />
+    <BundleResource Include="Resources\chuva.png" />
+    <BundleResource Include="Resources\nublado.png" />
+    <BundleResource Include="Resources\sol.png" />
+    <BundleResource Include="Resources\capa.png" />
+    <BundleResource Include="Resources\tempo.png" />
+    <BundleResource Include="Resources\add.png" />
+    <BundleResource Include="Resources\bg.png" />
+    <BundleResource Include="Resources\cloudiness.png" />
+    <BundleResource Include="Resources\grid.png" />
+    <BundleResource Include="Resources\humidity.png" />
+    <BundleResource Include="Resources\list.png" />
+    <BundleResource Include="Resources\pressure.png" />
+    <BundleResource Include="Resources\wind.png" />
+    <BundleResource Include="Resources\menu.png" />
+    <BundleResource Include="Resources\nublado.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\TesteUol\TesteUol.projitems" Label="Shared" />

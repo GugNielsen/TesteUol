@@ -87,6 +87,8 @@ namespace TesteUol.Entities
     public class DailyForecast
     {
         public long time { get; set; }
+        public DateTime? date { get; set; }
+        public string celsiu { get; set; }
         public string summary { get; set; }
         public string icon { get; set; }
         public long sunriseTime { get; set; }

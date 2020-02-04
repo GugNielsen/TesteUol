@@ -28,7 +28,6 @@ namespace TesteUol
         {
             // Views Models/ Views
             containerRegistry.RegisterForNavigation<TempoPage, TempoViewModel>();
-            containerRegistry.RegisterForNavigation<TestePage, TempoViewModel>();
             containerRegistry.RegisterForNavigation<Teste2, TempoViewModel>();
 
 

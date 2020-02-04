@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using ObjCRuntime;
 using TesteUol.Abstractions;
 using TesteUol.Helpers;
 using TesteUol.Services;

@@ -15,5 +15,12 @@ namespace TesteUol
             var milliseconds = _input.ToUniversalTime().Subtract(UnixEpoch).TotalSeconds;
             return Convert.ToInt64(milliseconds).ToString();
         }
+
+        public static string ConvertCelsius(float _input)
+        {
+            string CTemp;
+            var temp = (_input - 32) / (float)1.8;
+            return CTemp = temp.ToString("0"); 
+        }
     }
 }
