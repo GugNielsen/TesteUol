@@ -88,6 +88,9 @@
     <PackageReference Include="Syncfusion.Xamarin.SfListView">
       <Version>17.4.0.46</Version>
     </PackageReference>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>1.2.0.223</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

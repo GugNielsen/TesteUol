@@ -20,7 +20,10 @@ namespace TesteUol.ViewModels {
         //    get { return _timeZone; }
         //    set { SetProperty(ref _timeZone, value); }
         //}
+        public ViewModelBase()
+        {
 
+        }
 
         /// <param name="navigationService">Navigation service.</param>
         public ViewModelBase(INavigationService navigationService)

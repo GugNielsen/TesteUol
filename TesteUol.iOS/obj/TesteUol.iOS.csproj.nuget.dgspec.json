@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[106.10.1, )"
             },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[1.2.0.223, )"
+            },
             "Syncfusion.Xamarin.SfListView": {
               "target": "Package",
               "version": "[17.4.0.46, )"

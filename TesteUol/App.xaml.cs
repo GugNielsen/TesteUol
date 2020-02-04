@@ -29,6 +29,8 @@ namespace TesteUol
             // Views Models/ Views
             containerRegistry.RegisterForNavigation<TempoPage, TempoViewModel>();
             containerRegistry.RegisterForNavigation<Teste2, TempoViewModel>();
+            containerRegistry.RegisterForNavigation<DetailsClimaPage, DetailsClimaViewModel>();
+
 
 
             containerRegistry.Register<IConnectivityService, ConnectivityService>();

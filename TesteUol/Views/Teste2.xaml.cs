@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Rg.Plugins.Popup.Services;
 using TesteUol.Abstractions;
 using TesteUol.Helpers;
 using TesteUol.Services;
@@ -24,6 +25,9 @@ namespace TesteUol.Views
                 animation.Begin();
             }
         }
+
+       
+
 
     }
 }

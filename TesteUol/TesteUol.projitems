@@ -19,6 +19,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DetailsClimaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -49,6 +53,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Entities\ForecastIOResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\Extensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\RequestHelpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Custon\CustomListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailsClimaPage.xaml.cs">
+      <DependentUpon>DetailsClimaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DetailsClimaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Abstractions\" />
@@ -57,5 +66,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Views\" />
     <Folder Include="$(MSBuildThisFileDirectory)Entities\" />
     <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Custon\" />
   </ItemGroup>
 </Project>

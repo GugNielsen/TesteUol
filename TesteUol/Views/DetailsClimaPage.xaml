@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="TesteUol.Views.DetailsClimaPage"
+                 xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+
+    <StackLayout Margin="18"
+                 Padding="36"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 BackgroundColor="White" 
+                 HeightRequest="500"
+                 WidthRequest="500">
+         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <!--0-->
+                <ColumnDefinition />
+                <!--1-->
+                <ColumnDefinition />
+                <!--2-->
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="50" />
+                <!--0-->
+                <RowDefinition
+                    Height="Auto" />
+                <RowDefinition
+                    Height="auto" />
+                <!--2-->
+                  <RowDefinition
+                    Height="100" />
+                <RowDefinition
+                    Height="Auto" />
+                <!--3-->
+                <RowDefinition
+                    Height="5"/>
+            </Grid.RowDefinitions>
+             <StackLayout Margin="5" Grid.Row="1" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                 <Label Text="{Binding Date,StringFormat='{0:dd}'}" TextColor="#000" FontSize="34" VerticalOptions="Center"/>
+                 <Label Text="{Binding Date,StringFormat='{0:dddd MMMM}'}"  TextColor="#000" FontSize="12" VerticalOptions="Center"/>
+             </StackLayout>
+             <StackLayout   Grid.Row="2" Grid.ColumnSpan="3">
+             <StackLayout Orientation="Horizontal"  VerticalOptions="EndAndExpand" Margin="5">
+                <Label Text="{Binding TemperaturaMaxima}" HorizontalOptions="Start" TextColor="#000" FontSize="30" VerticalOptions="Center"/>
+                  <Label Text="°C" TextColor="Black"  HorizontalOptions="StartAndExpand" FontSize="15" VerticalOptions="Center"/>
+                  <Label Text="{Binding TemperaturaMinima}" HorizontalOptions="EndAndExpand" TextColor="#000" FontSize="30" VerticalOptions="Center"/>
+                  <Label Text="°C" TextColor="Black" FontSize="15" HorizontalOptions="End" VerticalOptions="Center"/>
+             </StackLayout>
+                 <StackLayout Orientation="Horizontal"  VerticalOptions="StartAndExpand" Margin="-5">
+                     <Label Text="Max..." TextColor="#7D7D7D" HorizontalOptions="StartAndExpand" FontSize="12"/>
+                     <Label Text="Min..." TextColor="#7D7D7D"  HorizontalOptions="EndAndExpand" FontSize="12"/>
+                 </StackLayout>
+
+                 </StackLayout>
+              <StackLayout   Grid.Row="3" Grid.ColumnSpan="3">
+                   <forms:AnimationView
+                x:Name="LottieAnimation"
+                Grid.Row="0"
+                Animation="{Binding ImageAnimada}"
+                AutoPlay="true"
+                Loop="True"
+                Speed="1"
+                Scale="1"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" />
+                  </StackLayout>
+             </Grid>
+      
+    </StackLayout>
+</pages:PopupPage>

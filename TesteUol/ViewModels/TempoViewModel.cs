@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using Prism.Commands;
 using Prism.Navigation;
+using Rg.Plugins.Popup.Services;
 using TesteUol.Entities;
 using TesteUol.Helpers;
 using TesteUol.Services;
+using TesteUol.Views;
 
 namespace TesteUol.ViewModels
 {
@@ -71,6 +74,7 @@ namespace TesteUol.ViewModels
             get { return _dailyForecast; }
             set { SetProperty(ref _dailyForecast, value); }
         }
+
 
 
         public TempoViewModel(INavigationService navigationService) : base(navigationService)
@@ -158,6 +162,16 @@ namespace TesteUol.ViewModels
             {
                 Currently.icon = "chuva.json";
             }
+        }
+
+        private DelegateCommand<DailyForecast> _detailClimaCommand;         public DelegateCommand<DailyForecast> DetailsClimaCommand => _detailClimaCommand ?? (_detailClimaCommand = new DelegateCommand<DailyForecast>(async (item) => await DetailsClimaAsync(item)));
+
+        private async Task DetailsClimaAsync(DailyForecast item)
+        {
+            var navigationParams = new NavigationParameters();
+            navigationParams.Add("day", item);
+            PopupNavigation.Instance.PushAsync(new DetailsClimaPage(item));
+            //await _navigationService.NavigateAsync("DetailsClimaPage", navigationParams);
         }
     }
 }
