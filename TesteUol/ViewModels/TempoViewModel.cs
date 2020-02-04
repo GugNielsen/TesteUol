@@ -75,12 +75,13 @@ namespace TesteUol.ViewModels
             set { SetProperty(ref _dailyForecast, value); }
         }
 
+   
 
 
         public TempoViewModel(INavigationService navigationService) : base(navigationService)
         {
             //WeatherData();
-            _ForecastIORequest = new ForecastIORequest("8cdfe5016e2c5632b2f1e060380b873a",-22.9056075,-43.1167342, Unit.us,Language.pt);
+            _ForecastIORequest = new ForecastIORequest(AppConstants.Apikey3, -22.9056075,-43.1167342, Unit.us,Language.pt);
             _taskInit = TaskInit();
         }
 

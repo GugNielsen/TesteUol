@@ -26,6 +26,14 @@ namespace TesteUol.ViewModels
             get { return _dewPoint; }
             set { SetProperty(ref _dewPoint, value); }
         }
+        //Humidity
+
+        private float _humidity;
+        public float Humidity
+        {
+            get { return _humidity; }
+            set { SetProperty(ref _humidity, value); }
+        }
 
         private float _windSpeed;
         public float WindSpeed
@@ -75,6 +83,7 @@ namespace TesteUol.ViewModels
             Summary = item.summary;
             TemperaturaMaxima = Extensions.ConvertCelsius(item.apparentTemperatureMax);
             TemperaturaMinima = Extensions.ConvertCelsius(item.apparentTemperatureMin);
+            Humidity = item.humidity;
             icon = item.icon;
             WindSpeed = item.windSpeed;
             DewPoint = item.dewPoint;
