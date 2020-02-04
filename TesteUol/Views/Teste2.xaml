@@ -60,7 +60,7 @@
                  <forms:AnimationView
             x:Name="LottieAnimation"
             Grid.Row="0"
-            Animation="chuva.json"
+            Animation="{Binding Currently.icon}"
             AutoPlay="true"
             Loop="True"
             Speed="1"

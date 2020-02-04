@@ -61,6 +61,7 @@ resources;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/l
 resources;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/2/jl/res/values/vpi__styles.xml
 resources;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/4/jl/res/values/values.xml
 resources;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/48/jl/res/values/styles.xml
+resources;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/51/jl/res/values/strings.xml
 resources;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/7/jl/res/values/strings.xml
 resources;obj/Debug/res/values/colors.xml
 resources;obj/Debug/res/values/styles.xml
@@ -70,6 +71,7 @@ set;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/48/j
 set;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/48/jl/res/anim/exittoright.xml
 string;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/1/jl/res/values/strings.xml
 string;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/2/jl/res/values/strings.xml
+string;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/51/jl/res/values/strings.xml
 style;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/2/jl/res/values/vpi__styles.xml
 style;/Users/gustavonielsen/repository/TesteUol/TesteUol.Android/obj/Debug/lp/48/jl/res/values/styles.xml
 style;obj/Debug/res/values/styles.xml

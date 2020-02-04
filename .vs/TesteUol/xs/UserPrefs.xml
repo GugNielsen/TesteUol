@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.ItemProperties.TesteUol.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.47573F4F-A8C3-4897-A072-4889718E25C7" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/ViewModels/TempoViewModel.cs">
     <Files>
-      <File FileName="TesteUol/ViewModels/TempoViewModel.cs" Line="101" Column="20" />
+      <File FileName="TesteUol/ViewModels/TempoViewModel.cs" Line="124" Column="6" />
       <File FileName="TesteUol/Views/Teste2.xaml.cs" Line="1" Column="1" />
-      <File FileName="TesteUol/Views/Teste2.xaml" Line="5" Column="38" />
+      <File FileName="TesteUol/Views/Teste2.xaml" Line="61" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,19 +14,8 @@
               <Node name="ViewModels" expanded="True">
                 <Node name="TempoViewModel.cs" selected="True" />
               </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Teste2.xaml" expanded="True" />
-              </Node>
-              <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="TesteUol.Android" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="mipmap-hdpi" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="TesteUol.iOS" expanded="True">
-              <Node name="Resources" expanded="True" />
-            </Node>
+            <Node name="TesteUol.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>

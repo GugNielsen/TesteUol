@@ -1,6 +1,8 @@
 ﻿using CarouselView.FormsPlugin.iOS;
 using Foundation;
 using Lottie.Forms.iOS.Renderers;
+using Syncfusion.ListView.XForms.iOS;
+using Syncfusion.XForms.iOS.EffectsView;
 using UIKit;
 
 namespace TesteUol.iOS
@@ -23,6 +25,8 @@ namespace TesteUol.iOS
             global::Xamarin.Forms.Forms.Init();
 
             AnimationViewRenderer.Init();
+            SfListViewRenderer.Init();
+            SfEffectsViewRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

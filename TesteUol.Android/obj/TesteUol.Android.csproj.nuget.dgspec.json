@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[106.10.1, )"
             },
+            "Syncfusion.Xamarin.SfListView": {
+              "target": "Package",
+              "version": "[17.4.0.46, )"
+            },
             "System.Net.Http": {
               "target": "Package",
               "version": "[4.3.4, )"
