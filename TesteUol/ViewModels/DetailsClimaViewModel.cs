@@ -42,15 +42,15 @@ namespace TesteUol.ViewModels
             set { SetProperty(ref _windSpeed, value); }
         }
 
-        private string _temperaturaMaxima;
-        public string TemperaturaMaxima
+        private float _temperaturaMaxima;
+        public float TemperaturaMaxima
         {
             get { return _temperaturaMaxima; }
             set { SetProperty(ref _temperaturaMaxima, value); }
         }
 
-        private string _temperaturaMinima;
-        public string TemperaturaMinima
+        private float _temperaturaMinima;
+        public float TemperaturaMinima
         {
             get { return _temperaturaMinima; }
             set { SetProperty(ref _temperaturaMinima, value); }
@@ -81,8 +81,8 @@ namespace TesteUol.ViewModels
         public DetailsClimaViewModel(DailyForecast item)
         {
             Summary = item.summary;
-            TemperaturaMaxima = Extensions.ConvertCelsius(item.apparentTemperatureMax);
-            TemperaturaMinima = Extensions.ConvertCelsius(item.apparentTemperatureMin);
+            TemperaturaMaxima = item.apparentTemperatureMax;
+            TemperaturaMinima = item.apparentTemperatureMin;
             Humidity = item.humidity;
             icon = item.icon;
             WindSpeed = item.windSpeed;
@@ -97,17 +97,22 @@ namespace TesteUol.ViewModels
         {
             // Pegar a Imagem Aminada de Acordo Com Summary
             // Explicando Para economizar tempo eu fiz deste jeito e logico que fosse MultiIdiomas faria de outra Maneira 
-            if (Summary.Contains("sol"))
+            if (Summary.Contains("sol") || Summary.Contains("Sol"))
             {
                 ImageAnimada = "sum.json";
+
             }
-            else if (Summary.Contains("nublado"))
+            else if (Summary.Contains("nublado") || Summary.Contains("Nublado"))
             {
                 ImageAnimada = "nublado.json";
             }
+            else if (Summary.Contains("Chuva") || Summary.Contains("chuva") || Summary.Contains("temporal") || Summary.Contains("temporal"))
+            {
+                ImageAnimada = "chivinha.json";
+            }
             else
             {
-                ImageAnimada= "chuva.json";
+                ImageAnimada = "sum.json";
             }
         }
     }

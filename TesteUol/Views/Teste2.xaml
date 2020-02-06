@@ -19,7 +19,7 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition
-                    Height="20" />
+                    Height="5" />
                 <!--0-->
                 <RowDefinition
                     Height="Auto" />
@@ -38,19 +38,19 @@
                 <RowDefinition
                     Height="5"/>
             </Grid.RowDefinitions>
-                <!--Aminação-->
             <StackLayout Grid.Row="1" Grid.ColumnSpan="3" Margin="10,20">
                   <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Start" VerticalOptions="StartAndExpand" Margin="20,20">
-         <ImageButton Source="menu.png" WidthRequest="23" HeightRequest="15" HorizontalOptions="Start" VerticalOptions="Center" />
-         <Label Text="{Binding Tempo.timezone} " FontSize="16" VerticalOptions="Center" TextColor="#fff"/>
-            </StackLayout>
+         <Entry HeightRequest="30" BackgroundColor="#f4f4f4" WidthRequest="150" Keyboard="Text" Placeholder="digite a cidade" Text="{Binding City}" HorizontalTextAlignment="Center" FontSize="12" ></Entry>
+            <Button HeightRequest="30" Command="{Binding MudarCidadeCommand}" CommandParameter="{Binding City}" WidthRequest="80" CornerRadius="15" Text="Buscar" FontSize="12" TextColor="#fff" BackgroundColor="Transparent"></Button>
+            </StackLayout >
+                <Label Text="{Binding Tempo.timezone} " HorizontalOptions="CenterAndExpand" FontSize="16" VerticalOptions="CenterAndExpand" TextColor="#fff"/>
              </StackLayout >
               <!--Dados E TEMPERATURAS-->
              <StackLayout Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="0,10" HorizontalOptions="Center" VerticalOptions="Center">
                 <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="Center">
                 <Image Source="weather.png" WidthRequest="50" HeightRequest="50" VerticalOptions="Center"/>
-                <Label Text="{Binding CTemp}" TextColor="#fff" FontSize="70" FontAttributes="Bold" VerticalOptions="Center"/>
-                <Label Text="°C" TextColor="#fff" FontSize="34" VerticalOptions="Center"/>
+                <Label Text="{Binding Currently.temperature, StringFormat='{0:#}°c '}" TextColor="#fff" FontSize="70" FontAttributes="Bold" VerticalOptions="Center"/>
+                <!--<Label Text="" TextColor="#fff" FontSize="34" VerticalOptions="Center"/>-->
             </StackLayout>
              <!--<Image WidthRequest="300" HeightRequest="300" Source="{Binding Currently.icon}"/>-->
             <Label Text="{Binding Currently.summary}" TextColor="#fff" FontSize="16" HorizontalOptions="Center"/>
@@ -62,6 +62,8 @@
                  <forms:AnimationView
             x:Name="LottieAnimation"
             Grid.Row="0"
+             WidthRequest="120"
+            HeightRequest="120"
             Animation="{Binding Currently.icon}"
             AutoPlay="true"
             Loop="True"
@@ -83,28 +85,32 @@
                 <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="humidity.png" HeightRequest="25" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="{Binding Currently.humidity}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <!--,StringFormat='{0:0}%}'-->
+                        <Label Text="{Binding Currently.humidity, StringFormat='{0:0}%'}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label Text="Humidity" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="wind.png" HeightRequest="25" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="{Binding Currently.windSpeed}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <!--StringFormat='{0:0} m/s'-->
+                        <Label Text="{Binding Currently.windSpeed, StringFormat='{0:0} m/s'}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label Text="Wind" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="pressure.png" HeightRequest="25" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="{Binding Currently.pressure}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <!--, StringFormat='{0:0} hpa'-->
+                        <Label Text="{Binding Currently.pressure, StringFormat='{0:0} hpa'}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label Text="Pressure" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="cloudiness.png" HeightRequest="25" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="{Binding Currently.dewPoint}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                        <Label Text="{Binding Currently.dewPoint, StringFormat='{0:#}°c'}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label Text="Dew Point" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
@@ -133,11 +139,13 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
+                               <!--<Label Text="{Binding time}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>-->
                                 <Label Text="{Binding date,StringFormat='{0:dddd dd}'}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
                                 <Image Grid.Column="1" Source="{Binding icon}" WidthRequest="38" HeightRequest="38" HorizontalOptions="Center" VerticalOptions="Center"/>
                                 <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="20,0" HorizontalOptions="End" VerticalOptions="Center">
-                                    <Label Text="{Binding celsiu}" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center"/>
-                                    <Label Text="°C" TextColor="Black" FontSize="15" VerticalOptions="Center"/>
+                                    <!--<Label Text="{Binding temperatureMax}" />-->
+                                    <Label Text="{Binding temperatureMin ,StringFormat='{0:#}°c'}" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center"/>
+                                    <Label Text="" TextColor="Black" FontSize="15" VerticalOptions="Center"/>
                                 </StackLayout>
                             </Grid>
                         </Frame>

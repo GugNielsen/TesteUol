@@ -1,42 +1,37 @@
 ﻿<Properties StartupConfiguration="{8C2B4ACB-4DB9-4185-9B60-F0CAB8490E83}|Default">
-  <MonoDevelop.Ide.ItemProperties.TesteUol.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.47573F4F-A8C3-4897-A072-4889718E25C7" />
+  <MonoDevelop.Ide.ItemProperties.TesteUol.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.47573F4F-A8C3-4897-A072-4889718E25C7" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/Views/DetailsClimaPage.xaml">
     <Files>
-      <File FileName="TesteUol/ViewModels/TempoViewModel.cs" Line="84" Column="76" />
-      <File FileName="TesteUol/Helpers/AppConstants.cs" Line="13" Column="72" />
-      <File FileName="TesteUol/ViewModels/ViewModelBase.cs" Line="1" Column="1" />
-      <File FileName="TesteUol/Views/DetailsClimaPage.xaml" Line="15" Column="37" />
+      <File FileName="TesteUol/Views/CidadesPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TesteUol/Views/Teste2.xaml" Line="73" Column="47" />
+      <File FileName="TesteUol/ViewModels/CidadesPagesViewModel.cs" Line="1" Column="1" />
+      <File FileName="TesteUol/Views/CidadesPage.xaml" Line="66" Column="109" />
+      <File FileName="TesteUol/ViewModels/TempoViewModel.cs" Line="1" Column="1" />
+      <File FileName="TesteUol/Views/DetailsClimaPage.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TesteUol" expanded="True">
             <Node name="TesteUol" expanded="True">
-              <Node name="Helpers" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="DetailsClimaPage.xaml" selected="True" />
+                <Node name="CidadesPage.xaml" expanded="True" />
+                <Node name="DetailsClimaPage.xaml" expanded="True" selected="True" />
               </Node>
             </Node>
-            <Node name="TesteUol.iOS" expanded="True">
-              <Node name="Resources" expanded="True" />
-            </Node>
+            <Node name="TesteUol.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="../../../TesteUol/Services/RestClient.cs" line="32" offsetX="-1" offsetY="-1" expression="ex.Message" liveUpdate="False" />
-    <Watch file="../../../TesteUol/Services/RestClient.cs" line="29" offsetX="-1" offsetY="-1" expression="a" liveUpdate="False" />
-  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TesteUol.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.ItemProperties.TesteUol.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/Services/RestServices.cs" relfile="TesteUol/Services/RestServices.cs" line="23" column="1" />
-      <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/Services/RestClient.cs" relfile="TesteUol/Services/RestClient.cs" line="29" column="1" />
-      <Breakpoint file="/Users/gustavonielsen/repository/TesteUol/TesteUol/Services/RestClient.cs" relfile="TesteUol/Services/RestClient.cs" line="27" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

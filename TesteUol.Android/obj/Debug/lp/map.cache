@@ -7,6 +7,7 @@ Lottie.Forms
 Microsoft.AppCenter.Android.Bindings
 Microsoft.AppCenter
 Plugin.Connectivity
+Plugin.ExternalMaps
 Prism.Forms
 Rg.Plugins.Popup.Droid
 Syncfusion.Core.XForms.Android

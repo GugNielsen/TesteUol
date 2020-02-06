@@ -238,6 +238,17 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.ExternalMaps/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {}
+        }
+      },
       "Xamanimation/1.3.0": {
         "type": "package",
         "dependencies": {
@@ -614,6 +625,17 @@
         "runtime": {
           "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugin.ExternalMaps/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {}
         }
       },
       "Xamanimation/1.3.0": {
@@ -994,6 +1016,17 @@
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.ExternalMaps/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {}
+        }
+      },
       "Xamanimation/1.3.0": {
         "type": "package",
         "dependencies": {
@@ -1370,6 +1403,17 @@
         "runtime": {
           "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
           "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugin.ExternalMaps/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {}
         }
       },
       "Xamanimation/1.3.0": {
@@ -2117,6 +2161,47 @@
         "xam.plugin.connectivity.nuspec"
       ]
     },
+    "Xam.Plugin.ExternalMaps/4.0.1": {
+      "sha512": "FeZWVG56+x+N9/CuYVK44/TgG2TSDmmtz13u3+iC1RdUtb2TYvcxULpQ+YpCW3ICGGxa05uoMvRMk2M2Jd4e7w==",
+      "type": "package",
+      "path": "xam.plugin.externalmaps/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.dll",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.pdb",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.xml",
+        "lib/UAP10/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/UAP10/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/UAP10/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/UAP10/Plugin.ExternalMaps.XML",
+        "lib/UAP10/Plugin.ExternalMaps.dll",
+        "lib/UAP10/Plugin.ExternalMaps.pdb",
+        "lib/UAP10/Plugin.ExternalMaps.pri",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.XML",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.dll",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.xml",
+        "lib/netstandard1.0/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.ExternalMaps.deps.json",
+        "lib/netstandard1.0/Plugin.ExternalMaps.dll",
+        "lib/netstandard1.0/Plugin.ExternalMaps.pdb",
+        "lib/netstandard1.0/Plugin.ExternalMaps.xml",
+        "xam.plugin.externalmaps.4.0.1.nupkg.sha512",
+        "xam.plugin.externalmaps.nuspec"
+      ]
+    },
     "Xamanimation/1.3.0": {
       "sha512": "CXYLcQulqAL9qxRMecm5P5YXbOWiBGK0mgtV2buyHehLjbj6Hf+EdHs8cqVztrD47/zAiTAz2yDCURRXC8d33Q==",
       "type": "package",
@@ -2427,6 +2512,7 @@
       "Syncfusion.Xamarin.SfListView >= 17.4.0.46",
       "System.Net.Http >= 4.3.4",
       "Xam.Plugin.Connectivity >= 3.2.0",
+      "Xam.Plugin.ExternalMaps >= 4.0.1",
       "Xamanimation >= 1.3.0",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.4.0.991537"
@@ -2506,6 +2592,10 @@
           "Xam.Plugin.Connectivity": {
             "target": "Package",
             "version": "[3.2.0, )"
+          },
+          "Xam.Plugin.ExternalMaps": {
+            "target": "Package",
+            "version": "[4.0.1, )"
           },
           "Xamanimation": {
             "target": "Package",
