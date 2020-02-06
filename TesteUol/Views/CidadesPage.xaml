@@ -29,7 +29,7 @@
                <StackLayout   Grid.Row="1"  Grid.ColumnSpan="3" Margin="10" >
                   <Label Text="{Binding Tempo.timezone} " HorizontalOptions="CenterAndExpand" FontSize="16" VerticalOptions="CenterAndExpand" TextColor="#fff"/>
                 <syncfusion:SfListView
-                    HeightRequest="500"
+                    HeightRequest="520"
                     WidthRequest="600"
                     ItemSize="300"
                     SelectionBackgroundColor="Transparent"
@@ -68,25 +68,25 @@
 
                                       <Label Margin="15,0" HorizontalOptions="CenterAndExpand" Text="{Binding summary}" TextColor="#7D7D7D" FontSize="12" />
 
-                                    <StackLayout Margin="15,10" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                                    <StackLayout Margin="15,7" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
                                           <Image Source="humidity.png" WidthRequest="20" HeightRequest="20"/>
                                           <Label Text="{Binding  humidity,StringFormat='{0:0}%'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
                                            <Label Text="Humidity" TextColor="#7D7D7D" FontSize="12" />
                                       </StackLayout>
-                                     <StackLayout Margin="15,10" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                                     <StackLayout Margin="15,7" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
                                           <Image Source="wind.png" WidthRequest="20" HeightRequest="20"/>
                                           <Label Text="{Binding  windSpeed,,StringFormat='{0:0.0} m/s'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
                                            <Label Text="Wind" TextColor="#7D7D7D" FontSize="12" />
                                       </StackLayout>
                                  
-                                     <StackLayout Margin="15,10" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                                     <StackLayout Margin="15,7" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
                                           <Image Source="pressure.png" WidthRequest="20" HeightRequest="20"/>
                                           <Label Text="{Binding  pressure,StringFormat='{0:0} hpa'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
                                            <Label Text="Pressure" TextColor="#7D7D7D" FontSize="12" />
                                       </StackLayout>
 
-                                     <StackLayout Margin="15,10" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
-                                          <Image Source="cloudines.png" WidthRequest="20" HeightRequest="20"/>
+                                     <StackLayout Margin="15,7" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                                          <Image Source="cloudiness.png" WidthRequest="20" HeightRequest="20"/>
                                           <Label Text="{Binding dewPoint,StringFormat='{0:#}°c'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
                                            <Label Text="Dew Point" TextColor="#7D7D7D" FontSize="12" />
                                       </StackLayout>

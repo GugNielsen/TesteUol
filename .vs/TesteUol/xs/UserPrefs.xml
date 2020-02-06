@@ -1,24 +1,19 @@
 ﻿<Properties StartupConfiguration="{8C2B4ACB-4DB9-4185-9B60-F0CAB8490E83}|Default">
   <MonoDevelop.Ide.ItemProperties.TesteUol.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.47573F4F-A8C3-4897-A072-4889718E25C7" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/Views/DetailsClimaPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/Views/CidadesPage.xaml">
     <Files>
       <File FileName="TesteUol/Views/CidadesPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="TesteUol/Views/Teste2.xaml" Line="73" Column="47" />
-      <File FileName="TesteUol/ViewModels/CidadesPagesViewModel.cs" Line="1" Column="1" />
-      <File FileName="TesteUol/Views/CidadesPage.xaml" Line="66" Column="109" />
-      <File FileName="TesteUol/ViewModels/TempoViewModel.cs" Line="1" Column="1" />
-      <File FileName="TesteUol/Views/DetailsClimaPage.xaml" Line="1" Column="1" />
+      <File FileName="TesteUol/Views/CidadesPage.xaml" Line="69" Column="58" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TesteUol" expanded="True">
             <Node name="TesteUol" expanded="True">
-              <Node name="Entities" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="CidadesPage.xaml" expanded="True" />
-                <Node name="DetailsClimaPage.xaml" expanded="True" selected="True" />
+                <Node name="CidadesPage.xaml" expanded="True" selected="True" />
+                <Node name="DetailsClimaPage.xaml" expanded="True" />
               </Node>
             </Node>
             <Node name="TesteUol.iOS" expanded="True" />
