@@ -7,8 +7,8 @@ namespace TesteUol.ViewModels
 {
     public class CidadesPagesViewModel : ViewModelBase
     {
-
         ForecastIORequest _ForecastIORequest;
+        #region Propeidades
         public double Latitude { get; set; }
 
         public double Longitude { get; set; }
@@ -42,6 +42,9 @@ namespace TesteUol.ViewModels
             set { SetProperty(ref _date, value); }
         }
 
+
+        #endregion
+       
         public CidadesPagesViewModel(double latitude, double longitude)
         {
             Latitude = latitude;
@@ -57,14 +60,20 @@ namespace TesteUol.ViewModels
             await LoadListDailyForecas();
         }
 
+        #region Carregando a logica Desta ViewModel
 
-        // Carregar Api
+        /// <summary>
+        /// Carregar Api
+        /// </summary>
         private void LoadApi()
         {
             _ForecastIORequest = new ForecastIORequest(AppConstants.Apikey2, Latitude, Longitude, Unit.si, Language.pt);
         }
 
-        // Carregando Os Dados
+        /// <summary>
+        /// Carregando Os Dados
+        /// </summary>
+        /// <returns></returns>
         private async Task ApiDados()
         {
             Tempo = _ForecastIORequest.Get();
@@ -74,10 +83,13 @@ namespace TesteUol.ViewModels
             // Converter data
             Date = Extensions.ToDateTime(Currently.time);
 
-             LoadImageAnimada();
+            LoadImageAnimada();
 
         }
-            // Carregar Imagem 
+
+        /// <summary>
+        /// Carregar Imagem
+        /// </summary>
         private void LoadImageAnimada()
         {
             // Pegar a Imagem Aminada de Acordo Com Summary
@@ -101,7 +113,10 @@ namespace TesteUol.ViewModels
             }
         }
 
-        // Carregar Lista
+        /// <summary>
+        /// Carregar Lista
+        /// </summary>
+        /// <returns></returns>
         private async Task LoadListDailyForecas()
         {
             try
@@ -111,7 +126,7 @@ namespace TesteUol.ViewModels
                 foreach (var item in Daily.data)
                 {
                     item.date = Extensions.ToDateTime(item.time);
-                 
+
                     // Pegar a Imagem de Acordo Com Summary
                     // Explicando Para economizar tempo eu fiz deste jeito e logico que fosse MultiIdiomas faria de outra Maneira 
                     if (item.summary.Contains("sol"))
@@ -139,5 +154,7 @@ namespace TesteUol.ViewModels
             }
 
         }
+        #endregion
+
     }
 }

@@ -6,6 +6,8 @@ namespace TesteUol.ViewModels
 {
     public class DetailsClimaViewModel : ViewModelBase
     {
+        #region Propriedades
+
         private string _icon;
         public string icon
         {
@@ -77,8 +79,21 @@ namespace TesteUol.ViewModels
             get { return _imageAnimada; }
             set { SetProperty(ref _imageAnimada, value); }
         }
+        #endregion
 
         public DetailsClimaViewModel(DailyForecast item)
+        {
+            LoadItem(item);
+            LoadImageAnimada();
+        }
+
+        #region Carregando a Logicas
+
+        /// <summary>
+        /// LoadItem
+        /// </summary>
+        /// <param name="item"></param>
+        private void LoadItem (DailyForecast item)
         {
             Summary = item.summary;
             TemperaturaMaxima = item.apparentTemperatureMax;
@@ -89,10 +104,11 @@ namespace TesteUol.ViewModels
             DewPoint = item.dewPoint;
             Date = (System.DateTime)item.date;
             Pressure = item.pressure;
-            LoadImageAnimada();
-
         }
 
+        /// <summary>
+        /// LoadImageAnimada
+        /// </summary>
         private void LoadImageAnimada()
         {
             // Pegar a Imagem Aminada de Acordo Com Summary
@@ -115,5 +131,7 @@ namespace TesteUol.ViewModels
                 ImageAnimada = "sum.json";
             }
         }
+        #endregion
+
     }
 }
