@@ -1,16 +1,23 @@
 ﻿<Properties StartupConfiguration="{8C2B4ACB-4DB9-4185-9B60-F0CAB8490E83}|Default">
   <MonoDevelop.Ide.ItemProperties.TesteUol.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.47573F4F-A8C3-4897-A072-4889718E25C7" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/Views/Teste2.xaml">
+    <Files>
+      <File FileName="TesteUol/Views/DetailsClimaPage.xaml" Line="96" Column="41" />
+      <File FileName="TesteUol/Views/CidadesPage.xaml" Line="92" Column="68" />
+      <File FileName="TesteUol/Views/Teste2.xaml" Line="145" Column="43" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TesteUol" expanded="True">
             <Node name="TesteUol" expanded="True">
-              <Node name="ViewModels" expanded="True">
-                <Node name="DetailsClimaViewModel.cs" selected="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Teste2.xaml" selected="True" />
               </Node>
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
-            <Node name="TesteUol.iOS" expanded="True" />
+            <Node name="TesteUol.Android" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -18,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TesteUol.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.ItemProperties.TesteUol.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_2_pie_9_0_api_28" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

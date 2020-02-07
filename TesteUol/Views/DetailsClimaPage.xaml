@@ -21,19 +21,17 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <!--{Binding Date,StringFormat='{0:dd}'}-->
-                <!--  header background  -->
                 <StackLayout Margin="5"  Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
-               <Label Text="{Binding Date,StringFormat='{0:dd}'}" TextColor="#000" FontSize="34" VerticalOptions="Center"/>
-                 <Label Text="{Binding Date,StringFormat='{0:MMMM,dddd}'}"  TextColor="#000" FontSize="12" VerticalOptions="Center"/>
+               <Label Text="{Binding Date,StringFormat='{0:dd}'}" TextColor="#fff" FontSize="25" VerticalOptions="Center"/>
+                 <Label Text="{Binding Date,StringFormat='{0:MMMM,dddd}'}" FontAttributes="Bold" TextColor="#fff" FontSize="15" VerticalOptions="Center"/>
              </StackLayout>
 
-                <StackLayout  Margin="0,40,0,0">
+                <StackLayout  Margin="0,30">
                        <forms:AnimationView
                 x:Name="LottieAnimation"
                 Grid.Row="0"
-                HeightRequest="90"
-                WidthRequest="90"
+                HeightRequest="70"
+                WidthRequest="70"
                 Animation="{Binding ImageAnimada}"
                 AutoPlay="true"
                 Loop="True"
@@ -46,18 +44,17 @@
               <!--{Binding TemperaturaMinima}-->
               <!--Binding TemperaturaMaxima}-->
             <!--  Profile Name  -->
-            <StackLayout  Margin="30" HorizontalOptions="Center">
-                  <StackLayout  Spacing="30" Orientation="Horizontal"  VerticalOptions="EndAndExpand">
-               <Label HorizontalOptions="CenterAndExpand" Text="{Binding TemperaturaMinima ,StringFormat='{0:#}°c mim'}" TextColor="#000" FontSize="25" VerticalOptions="Center"/>
-                   <Label HorizontalOptions="CenterAndExpand"  Text="{Binding TemperaturaMaxima, StringFormat='{0:#}°c max'}" TextColor="#000" FontSize="25" VerticalOptions="Center"/>
+            <StackLayout  Margin="0,10" HorizontalOptions="CenterAndExpand">
+                  <StackLayout  Spacing="30" Orientation="Horizontal"  HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+               <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="{Binding TemperaturaMinima ,StringFormat='{0:#}°c mim'}" TextColor="#fff" FontSize="15" VerticalOptions="Center"/>
+                   <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="{Binding TemperaturaMaxima, StringFormat='{0:#}°c max'}" TextColor="#fff" FontSize="15" VerticalOptions="Center"/>
              </StackLayout>
 
-            
             </StackLayout>
 
-                <Label Margin="0" Text="{Binding Summary}" TextColor="White" FontSize="12" HorizontalOptions="Center"/>
+                <Label Margin="0,10" Text="{Binding Summary}" TextColor="#fff"  FontSize="15" HorizontalOptions="Center"/>
 
-            <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="#F1F2F6"/>
+            <BoxView Margin="5,10" HeightRequest="1" BackgroundColor="#F1F2F6"/>
 
               <Frame HasShadow="false"
                      IsClippedToBounds="true"
@@ -76,33 +73,33 @@
                 </Grid.RowDefinitions>
                 
                 <StackLayout Spacing="10" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.RowSpan="1"  Grid.ColumnSpan="3">
-                <Image Source="humidity.png" WidthRequest="30" HeightRequest="20"/>
-                <Label Text="{Binding  Humidity, StringFormat='{0:0}%'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
-                <Label Text="Humidity" TextColor="#7D7D7D" FontSize="12" />
+                <Image Source="humidity.png" WidthRequest="20" HeightRequest="20"/>
+                <Label Text="{Binding  Humidity, StringFormat='{0:0.0}%'}"  TextColor="Black" FontSize="12"  />
+                <Label Text="Umidade" TextColor="#7D7D7D" FontSize="12" />
                 </StackLayout >
 
                   <StackLayout  Spacing="10" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.RowSpan="1"  Grid.ColumnSpan="3">
-                <Image   Source="wind.png" WidthRequest="30" HeightRequest="20" />
+                <Image   Source="wind.png" WidthRequest="20" HeightRequest="20" />
                 <Label  Text="{Binding  WindSpeed ,StringFormat='{0:0.0} m/s'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" /> 
-                <Label  Text="Wind"  TextColor="#7D7D7D" FontSize="12" />
+                <Label  Text="Vento"  TextColor="#7D7D7D" FontSize="12" />
 
                 </StackLayout >
 
                    <StackLayout  Spacing="10" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.RowSpan="1"  Grid.ColumnSpan="3">
-                  <Image  Source="pressure.png" WidthRequest="30" HeightRequest="20"/>
+                  <Image  Source="pressure.png" WidthRequest="20" HeightRequest="20"/>
                 <Label  Text="{Binding Pressure , StringFormat='{0:0} hpa'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" /> 
-               <Label  Text="Pressure"  TextColor="#7D7D7D" FontSize="12" />
+               <Label  Text="Pressão"  TextColor="#7D7D7D" FontSize="12" />
                 </StackLayout >
               <StackLayout Spacing="10" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
-                <Image Source="cloudiness.png" WidthRequest="30" HeightRequest="20"/>
+                <Image Source="cloudiness.png" WidthRequest="20" HeightRequest="20"/>
                 <Label Text="{Binding DewPoint , StringFormat='{0:#}°c'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
-                <Label Text="Dew Point" TextColor="#7D7D7D" FontSize="12" />
+                <Label Text="Condensação" TextColor="#7D7D7D" FontSize="12" />
               </StackLayout>
 
 
             </Grid>
                </Frame>
-            <BoxView Margin="20,10" HeightRequest="1" BackgroundColor="#F1F2F6"/>
+            <BoxView Margin="5,10" HeightRequest="1" BackgroundColor="#F1F2F6"/>
 
         </StackLayout>
       

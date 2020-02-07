@@ -67,7 +67,7 @@ namespace TesteUol.ViewModels
         /// </summary>
         private void LoadApi()
         {
-            _ForecastIORequest = new ForecastIORequest(AppConstants.Apikey2, Latitude, Longitude, Unit.si, Language.pt);
+            _ForecastIORequest = new ForecastIORequest(AppConstants.Apikey3, Latitude, Longitude, Unit.si, Language.pt);
         }
 
         /// <summary>
