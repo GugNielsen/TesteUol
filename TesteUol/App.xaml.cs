@@ -21,21 +21,19 @@ namespace TesteUol
         protected override void OnInitialized()
         {
             InitializeComponent();
+
+            //Licensing Syncfusion
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjA4MTMxQDMxMzcyZTM0MmUzMG5CVkRvZDJJRVZqenpIN1ptN1Y4amZiL3ZVV1puZzQycXU1RUs2TTNmYW89");
-            NavigationService.NavigateAsync("Teste2");
+            NavigationService.NavigateAsync("TestePage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             // Views Models/ Views
             containerRegistry.RegisterForNavigation<TempoPage, TempoViewModel>();
-            containerRegistry.RegisterForNavigation<Teste2, TempoViewModel>();
             containerRegistry.RegisterForNavigation<DetailsClimaPage, DetailsClimaViewModel>();
 
-
-
             containerRegistry.Register<IConnectivityService, ConnectivityService>();
-            //containerRegistry.Register<IRestService, RestServices>();
         }
 
         protected override void OnStart()

@@ -15,10 +15,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Teste2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DetailsClimaPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -47,9 +43,6 @@
       <DependentUpon>TempoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Abstractions\IAnimatedView.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\Teste2.xaml.cs">
-      <DependentUpon>Teste2.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Services\RestClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Entities\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Entities\ForecastIOException.cs" />
