@@ -21,6 +21,7 @@ namespace TesteUol
         protected override void OnInitialized()
         {
             InitializeComponent();
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjA4MTMxQDMxMzcyZTM0MmUzMG5CVkRvZDJJRVZqenpIN1ptN1Y4amZiL3ZVV1puZzQycXU1RUs2TTNmYW89");
             NavigationService.NavigateAsync("Teste2");
         }
 

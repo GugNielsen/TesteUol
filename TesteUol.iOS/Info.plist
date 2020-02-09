@@ -34,7 +34,6 @@
 	<string>TesteUol</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<!-- teste gug -->
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location access is required .....</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>

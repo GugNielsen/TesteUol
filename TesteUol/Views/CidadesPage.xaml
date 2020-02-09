@@ -27,7 +27,7 @@
                     Height="10"/>
             </Grid.RowDefinitions>
                <StackLayout   Grid.Row="1"  Grid.ColumnSpan="3" Margin="5" >
-                  <Label Text="{Binding Tempo.timezone} " HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" TextColor="#fff"/>
+                  <Label Text="{Binding City} " HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" TextColor="#fff"/>
                 <syncfusion:SfListView
                     HeightRequest="450"
                     WidthRequest="450"

@@ -147,7 +147,7 @@ namespace TesteUol.ViewModels
             }
             else if (Currently.summary.Contains("Chuva") || Currently.summary.Contains("chuva") || Currently.summary.Contains("temporal") || Currently.summary.Contains("temporal"))
             {
-                Currently.icon = "chuva.json";
+                Currently.icon = "nublado.json";
             }
             else
             {
@@ -274,7 +274,7 @@ namespace TesteUol.ViewModels
                 {
                     LatitudeGeocodificacao = location.Latitude;
                     LongitudeGeolocalizacao = location.Longitude;
-                    await PopupNavigation.Instance.PushAsync(new CidadesPage(LatitudeGeocodificacao, LongitudeGeolocalizacao));
+                    await PopupNavigation.Instance.PushAsync(new CidadesPage(LatitudeGeocodificacao, LongitudeGeolocalizacao,city));
                 }
 
             }

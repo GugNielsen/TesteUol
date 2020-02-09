@@ -27,6 +27,19 @@ namespace TesteUol.ViewModels
             set { SetProperty(ref _currently, value); }
         }
 
+        private string _city;
+        public string City
+        {
+            get { return _city; }
+            set { SetProperty(ref _city, value); }
+        }
+
+        private string _icon;
+        public string Image
+        {
+            get { return _icon; }
+            set { SetProperty(ref _icon, value); }
+        }
 
         private Daily _daily;
         public Daily Daily
@@ -45,11 +58,11 @@ namespace TesteUol.ViewModels
 
         #endregion
        
-        public CidadesPagesViewModel(double latitude, double longitude)
+        public CidadesPagesViewModel(double latitude, double longitude, string city)
         {
             Latitude = latitude;
             Longitude = longitude;
-
+            City = city;
             _taskInit = TaskInit();
         }
 
@@ -94,23 +107,40 @@ namespace TesteUol.ViewModels
         {
             // Pegar a Imagem Aminada de Acordo Com Summary
             // Explicando Para economizar tempo eu fiz deste jeito e logico que fosse MultiIdiomas faria de outra Maneira 
-            if (Currently.summary.Contains("sol") || Currently.summary.Contains("Sol"))
-            {
-                Currently.icon = "sum.json";
+                    if (Currently.summary.Contains("sol"))
+                    {
+                    Image = "sun.json";
+                    }
+                    else if (Currently.summary.Contains("nublado"))
+                    {
+                     Image = "nublado.json";
+                    }
+                    else if (Currently.summary.Contains("chuva"))
+                    {
+                        Image = "nublado.json";
+                    }
+                    else
+                    {
+                      Image = "sun.json";
+                    }
 
-            }
-            else if (Currently.summary.Contains("nublado") || Currently.summary.Contains("Nublado"))
-            {
-                Currently.icon = "nublado.json";
-            }
-            else if (Currently.summary.Contains("Chuva") || Currently.summary.Contains("chuva") || Currently.summary.Contains("temporal") || Currently.summary.Contains("temporal"))
-            {
-                Currently.icon = "chivinha.json";
-            }
-            else
-            {
-                Currently.icon = "sum.json";
-            }
+            //if (Currently.summary.Contains("sol") || Currently.summary.Contains("Sol"))
+            //{
+            //    Currently.icon = "sum.json";
+
+            //}
+            //else if (Currently.summary.Contains("nublado") || Currently.summary.Contains("Nublado"))
+            //{
+            //    Currently.icon = "nublado.json";
+            //}
+            //else if (Currently.summary.Contains("Chuva") || Currently.summary.Contains("chuva") || Currently.summary.Contains("temporal") || Currently.summary.Contains("temporal"))
+            //{
+            //    Currently.icon = "agua.json";
+            //}
+            //else
+            //{
+            //    Currently.icon = "sum.json";
+            //}
         }
 
         /// <summary>

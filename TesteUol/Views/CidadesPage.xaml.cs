@@ -7,11 +7,11 @@ using Xamarin.Forms.Xaml;
 namespace TesteUol.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CidadesPage 
+    public partial class CidadesPage
     {
-        public CidadesPage(double latitudeGeocodificacao, double longitudeGeolocalizacao)
+        public CidadesPage(double latitudeGeocodificacao, double longitudeGeolocalizacao, string city)
         {
-            var vm = new CidadesPagesViewModel(latitudeGeocodificacao, longitudeGeolocalizacao);
+            var vm = new CidadesPagesViewModel(latitudeGeocodificacao, longitudeGeolocalizacao,city);
             BindingContext = vm;
             InitializeComponent();
         }

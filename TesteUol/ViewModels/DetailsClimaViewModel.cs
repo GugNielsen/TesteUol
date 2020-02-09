@@ -124,7 +124,7 @@ namespace TesteUol.ViewModels
             }
             else if (Summary.Contains("Chuva") || Summary.Contains("chuva") || Summary.Contains("temporal") || Summary.Contains("temporal"))
             {
-                ImageAnimada = "chivinha.json";
+                ImageAnimada = "raining.json";
             }
             else
             {

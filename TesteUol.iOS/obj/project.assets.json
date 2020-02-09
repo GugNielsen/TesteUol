@@ -2519,20 +2519,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/gustavonielsen/.nuget/packages/": {}
+    "/Users/Nielsen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gustavonielsen/repository/TesteUol/TesteUol.iOS/TesteUol.iOS.csproj",
+      "projectUniqueName": "/Users/Nielsen/repossitory/TesteUol/TesteUol.iOS/TesteUol.iOS.csproj",
       "projectName": "TesteUol.iOS",
-      "projectPath": "/Users/gustavonielsen/repository/TesteUol/TesteUol.iOS/TesteUol.iOS.csproj",
-      "packagesPath": "/Users/gustavonielsen/.nuget/packages/",
-      "outputPath": "/Users/gustavonielsen/repository/TesteUol/TesteUol.iOS/obj/",
+      "projectPath": "/Users/Nielsen/repossitory/TesteUol/TesteUol.iOS/TesteUol.iOS.csproj",
+      "packagesPath": "/Users/Nielsen/.nuget/packages/",
+      "outputPath": "/Users/Nielsen/repossitory/TesteUol/TesteUol.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/gustavonielsen/.config/NuGet/NuGet.Config"
+        "/Users/Nielsen/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
