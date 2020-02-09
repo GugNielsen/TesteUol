@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/Nielsen/repossitory/TesteUol/TesteUol.Android/TesteUol.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/Nielsen/repossitory/TesteUol/TesteUol.Android/TesteUol.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Nielsen/repossitory/TesteUol/TesteUol.Android/TesteUol.Android.csproj",
+        "projectName": "TesteUol.Android",
+        "projectPath": "/Users/Nielsen/repossitory/TesteUol/TesteUol.Android/TesteUol.Android.csproj",
+        "packagesPath": "/Users/Nielsen/.nuget/packages/",
+        "outputPath": "/Users/Nielsen/repossitory/TesteUol/TesteUol.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/Nielsen/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "CarouselView.FormsPlugin": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Com.Airbnb.Android.Lottie": {
+              "target": "Package",
+              "version": "[3.0.3, )"
+            },
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.0.3, )"
+            },
+            "Microsoft.AppCenter": {
+              "target": "Package",
+              "version": "[2.6.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Prism.DryIoc.Forms": {
+              "target": "Package",
+              "version": "[7.2.0.1422, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.10.1, )"
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[1.2.0.223, )"
+            },
+            "Syncfusion.Xamarin.SfListView": {
+              "target": "Package",
+              "version": "[17.4.0.46, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Xam.Plugin.ExternalMaps": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Xamanimation": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.4.0.991537, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

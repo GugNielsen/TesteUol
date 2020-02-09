@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="TesteUol.Views.CidadesPage"
+                 xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+                  xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+        <StackLayout Margin="18"
+                 Padding="5"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 BackgroundColor="#6495ED" 
+                 HeightRequest="500"
+                 WidthRequest="500">
+            <Grid>
+                  <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <!--0-->
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="10" />
+                <!--0-->
+                <RowDefinition
+                    Height="430" />
+                <!--3-->
+                <RowDefinition
+                    Height="10"/>
+            </Grid.RowDefinitions>
+               <StackLayout   Grid.Row="1"  Grid.ColumnSpan="3" Margin="5" >
+                  <Label Text="{Binding City} " HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" TextColor="#fff"/>
+                <syncfusion:SfListView
+                    HeightRequest="450"
+                    WidthRequest="450"
+                    ItemSize="250"
+                    SelectionBackgroundColor="Transparent"
+                    FocusBorderThickness="2"
+                    ItemSpacing="5"
+                    BackgroundColor="Transparent"
+                    ItemsSource="{Binding Daily.data}"
+                    Orientation="Horizontal"
+                    FocusBorderColor="Transparent">
+                     <syncfusion:SfListView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame
+                                HasShadow="false"
+                                IsClippedToBounds="true"
+                                Padding="5"
+                                CornerRadius="12"
+                                BackgroundColor="#f4f4f4"
+                                BorderColor="Transparent">
+                                <StackLayout
+                                    BackgroundColor="#34543">
+                                    <Label
+                                      BackgroundColor="transparent"
+                                        Margin="0,5"
+                                        Text="{Binding date,StringFormat='{0:dddd dd}'}"
+                                        HorizontalOptions="Center"
+                                        FontAttributes="Bold"
+                                        FontSize="15"
+                                         />
+                                       <Image
+                                        Source="{Binding icon}" HeightRequest="90" WidthRequest="90"
+                                          />
+                                        <StackLayout Spacing="30" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0">
+                                         
+                                            <Label Text="{Binding temperatureMin ,StringFormat='{0:#}°c mim'}" TextColor="Black" FontSize="15" FontAttributes="Bold"/>
+                                             <Label Text="{Binding temperatureMax ,StringFormat='{0:#}°c max'}" TextColor="Black" FontSize="15" FontAttributes="Bold"/>
+                                      </StackLayout>
+
+                                      <Label Margin="15,4" HorizontalOptions="CenterAndExpand" Text="{Binding summary}" TextColor="Black" FontSize="12" />
+
+                                    <StackLayout Margin="15,4" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                                          <Image Source="humidity.png" WidthRequest="20" HeightRequest="20"/>
+                                          <Label Text="{Binding  humidity,StringFormat='{0:0.0} %'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
+                                           <Label Text="Umidade" TextColor="#7D7D7D" FontSize="12" />
+                                      </StackLayout>
+                                     <StackLayout Margin="15,4" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                                          <Image Source="wind.png" WidthRequest="20" HeightRequest="20"/>
+                                          <Label Text="{Binding  windSpeed,StringFormat='{0:0.0} m/s'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
+                                           <Label Text="Vento" TextColor="#7D7D7D" FontSize="12" />
+                                      </StackLayout>
+                                 
+                                     <StackLayout Margin="15,4" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                                          <Image Source="pressure.png" WidthRequest="20" HeightRequest="20"/>
+                                          <Label Text="{Binding  pressure,StringFormat='{0:0} hpa'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
+                                           <Label Text="Pressão" TextColor="#7D7D7D" FontSize="12" />
+                                      </StackLayout>
+
+                                     <StackLayout Margin="15,4" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                                          <Image Source="cloudiness.png" WidthRequest="20" HeightRequest="20"/>
+                                          <Label Text="{Binding dewPoint,StringFormat='{0:#}°c'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
+                                           <Label Text="Condensação" TextColor="#7D7D7D" FontSize="12" />
+                                      </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </syncfusion:SfListView.ItemTemplate>
+
+                </syncfusion:SfListView>
+               </StackLayout>
+                 
+            </Grid>
+        </StackLayout>           
+</pages:PopupPage>

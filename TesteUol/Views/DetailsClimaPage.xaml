@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="TesteUol.Views.DetailsClimaPage"
+                 xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 BackgroundImageSource="">
+
+    <StackLayout Margin="18"
+                 Padding="36"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 BackgroundColor="#6495ED" 
+                 HeightRequest="500"
+                 WidthRequest="500">
+
+          <StackLayout Orientation="Vertical">
+            <Grid ColumnSpacing="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Margin="5"  Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+               <Label Text="{Binding Date,StringFormat='{0:dd}'}" TextColor="#fff" FontSize="25" VerticalOptions="Center"/>
+                 <Label Text="{Binding Date,StringFormat='{0:MMMM,dddd}'}" FontAttributes="Bold" TextColor="#fff" FontSize="15" VerticalOptions="Center"/>
+             </StackLayout>
+                <!--{Binding ImageAnimada}-->
+                <StackLayout  Margin="0,30">
+                       <forms:AnimationView
+                x:Name="LottieAnimation"
+                Grid.Row="0"
+                HeightRequest="70"
+                WidthRequest="70"
+                Animation="{Binding ImageAnimada}"
+                AutoPlay="true"
+                Loop="True"
+                Speed="1"
+                Scale="1"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" />
+                </StackLayout>
+            </Grid>
+              <!--{Binding TemperaturaMinima}-->
+              <!--Binding TemperaturaMaxima}-->
+            <!--  Profile Name  -->
+            <StackLayout  Margin="0,10" HorizontalOptions="CenterAndExpand">
+                  <StackLayout  Spacing="30" Orientation="Horizontal"  HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+               <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="{Binding TemperaturaMinima ,StringFormat='{0:#}°c mim'}" TextColor="#fff" FontSize="15" VerticalOptions="Center"/>
+                   <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="{Binding TemperaturaMaxima, StringFormat='{0:#}°c max'}" TextColor="#fff" FontSize="15" VerticalOptions="Center"/>
+             </StackLayout>
+
+            </StackLayout>
+
+                <Label Margin="0,10" Text="{Binding Summary}" TextColor="#fff"  FontSize="15" HorizontalOptions="Center"/>
+
+            <BoxView Margin="5,10" HeightRequest="1" BackgroundColor="#F1F2F6"/>
+
+              <Frame HasShadow="false"
+                     IsClippedToBounds="true"
+                     Padding="5"
+                     CornerRadius="12"
+                     BackgroundColor="#fff">
+            <Grid RowSpacing="20" Margin="20,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="AUTO"/>
+                  
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                    <RowDefinition Height="AUTO"/>
+                </Grid.RowDefinitions>
+                
+                <StackLayout Spacing="10" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.RowSpan="1"  Grid.ColumnSpan="3">
+                <Image Source="humidity.png" WidthRequest="20" HeightRequest="20"/>
+                <Label Text="{Binding  Humidity, StringFormat='{0:0.0}%'}"  TextColor="Black" FontSize="12"  />
+                <Label Text="Umidade" TextColor="#7D7D7D" FontSize="12" />
+                </StackLayout >
+
+                  <StackLayout  Spacing="10" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.RowSpan="1"  Grid.ColumnSpan="3">
+                <Image   Source="wind.png" WidthRequest="20" HeightRequest="20" />
+                <Label  Text="{Binding  WindSpeed ,StringFormat='{0:0.0} m/s'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" /> 
+                <Label  Text="Vento"  TextColor="#7D7D7D" FontSize="12" />
+
+                </StackLayout >
+
+                   <StackLayout  Spacing="10" Grid.Column="0" Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.RowSpan="1"  Grid.ColumnSpan="3">
+                  <Image  Source="pressure.png" WidthRequest="20" HeightRequest="20"/>
+                <Label  Text="{Binding Pressure , StringFormat='{0:0} hpa'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" /> 
+               <Label  Text="Pressão"  TextColor="#7D7D7D" FontSize="12" />
+                </StackLayout >
+              <StackLayout Spacing="10" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                <Image Source="cloudiness.png" WidthRequest="20" HeightRequest="20"/>
+                <Label Text="{Binding DewPoint , StringFormat='{0:#}°c'}"  TextColor="Black" FontSize="12" FontAttributes="Bold" />
+                <Label Text="Condensação" TextColor="#7D7D7D" FontSize="12" />
+              </StackLayout>
+
+
+            </Grid>
+               </Frame>
+            <BoxView Margin="5,10" HeightRequest="1" BackgroundColor="#F1F2F6"/>
+
+        </StackLayout>
+      
+    </StackLayout>
+</pages:PopupPage>

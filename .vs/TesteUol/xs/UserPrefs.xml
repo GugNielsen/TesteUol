@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{8C2B4ACB-4DB9-4185-9B60-F0CAB8490E83}|Default">
+  <MonoDevelop.Ide.ItemProperties.TesteUol.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A9F80694-4BCC-4817-8628-75656D16FD93" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TesteUol/App.xaml.cs">
+    <Files>
+      <File FileName="TesteUol/Views/TempoPage.xaml.cs" Line="9" Column="64" />
+      <File FileName="TesteUol/Views/TempoPage.xaml" Line="10" Column="1" />
+      <File FileName="TesteUol/App.xaml" Line="1" Column="1" />
+      <File FileName="TesteUol/App.xaml.cs" Line="25" Column="55" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TesteUol" expanded="True">
+            <Node name="TesteUol" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="TempoPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="TesteUol.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="mipmap-anydpi-v26" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="TesteUol.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TesteUol.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_3_xl_q_10_0_-_api_29" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
