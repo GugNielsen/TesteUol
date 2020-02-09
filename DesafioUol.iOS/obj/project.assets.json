@@ -1005,20 +1005,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/gustavonielsen/.nuget/packages/": {}
+    "/Users/Nielsen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.iOS/DesafioUol.iOS.csproj",
+      "projectUniqueName": "/Users/Nielsen/repossitory/TesteUol/DesafioUol.iOS/DesafioUol.iOS.csproj",
       "projectName": "DesafioUol.iOS",
-      "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.iOS/DesafioUol.iOS.csproj",
-      "packagesPath": "/Users/gustavonielsen/.nuget/packages/",
-      "outputPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.iOS/obj/",
+      "projectPath": "/Users/Nielsen/repossitory/TesteUol/DesafioUol.iOS/DesafioUol.iOS.csproj",
+      "packagesPath": "/Users/Nielsen/.nuget/packages/",
+      "outputPath": "/Users/Nielsen/repossitory/TesteUol/DesafioUol.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/gustavonielsen/.config/NuGet/NuGet.Config"
+        "/Users/Nielsen/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1029,8 +1029,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj": {
-              "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj"
+            "/Users/Nielsen/repossitory/TesteUol/DesafioUol/DesafioUol.csproj": {
+              "projectPath": "/Users/Nielsen/repossitory/TesteUol/DesafioUol/DesafioUol.csproj"
             }
           }
         }

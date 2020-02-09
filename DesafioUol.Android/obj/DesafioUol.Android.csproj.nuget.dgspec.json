@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.Android/DesafioUol.Android.csproj": {}
+    "/Users/Nielsen/repossitory/TesteUol/DesafioUol.Android/DesafioUol.Android.csproj": {}
   },
   "projects": {
-    "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.Android/DesafioUol.Android.csproj": {
+    "/Users/Nielsen/repossitory/TesteUol/DesafioUol.Android/DesafioUol.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.Android/DesafioUol.Android.csproj",
+        "projectUniqueName": "/Users/Nielsen/repossitory/TesteUol/DesafioUol.Android/DesafioUol.Android.csproj",
         "projectName": "DesafioUol.Android",
-        "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.Android/DesafioUol.Android.csproj",
-        "packagesPath": "/Users/gustavonielsen/.nuget/packages/",
-        "outputPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol.Android/obj/",
+        "projectPath": "/Users/Nielsen/repossitory/TesteUol/DesafioUol.Android/DesafioUol.Android.csproj",
+        "packagesPath": "/Users/Nielsen/.nuget/packages/",
+        "outputPath": "/Users/Nielsen/repossitory/TesteUol/DesafioUol.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/gustavonielsen/.config/NuGet/NuGet.Config"
+          "/Users/Nielsen/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj": {
-                "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj"
+              "/Users/Nielsen/repossitory/TesteUol/DesafioUol/DesafioUol.csproj": {
+                "projectPath": "/Users/Nielsen/repossitory/TesteUol/DesafioUol/DesafioUol.csproj"
               }
             }
           }
@@ -52,17 +52,20 @@
         }
       }
     },
-    "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj": {
+    "/Users/Nielsen/repossitory/TesteUol/DesafioUol/DesafioUol.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj",
+        "projectUniqueName": "/Users/Nielsen/repossitory/TesteUol/DesafioUol/DesafioUol.csproj",
         "projectName": "DesafioUol",
-        "projectPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/DesafioUol.csproj",
-        "packagesPath": "/Users/gustavonielsen/.nuget/packages/",
-        "outputPath": "/Users/gustavonielsen/repository/Xamarim/Uol/DesafioUol/DesafioUol/obj/",
+        "projectPath": "/Users/Nielsen/repossitory/TesteUol/DesafioUol/DesafioUol.csproj",
+        "packagesPath": "/Users/Nielsen/.nuget/packages/",
+        "outputPath": "/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/gustavonielsen/.config/NuGet/NuGet.Config"
+          "/Users/Nielsen/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -109,7 +112,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,13 @@
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/bin/Debug/netstandard2.0/DesafioUol.deps.json
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/bin/Debug/netstandard2.0/DesafioUol.dll
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/bin/Debug/netstandard2.0/ref/DesafioUol.dll
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/bin/Debug/netstandard2.0/DesafioUol.pdb
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/Debug/netstandard2.0/DesafioUol.csprojAssemblyReference.cache
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/Debug/netstandard2.0/DesafioUol.AssemblyInfoInputs.cache
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/Debug/netstandard2.0/DesafioUol.AssemblyInfo.cs
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/Debug/netstandard2.0/DesafioUol.dll
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/Debug/netstandard2.0/ref/DesafioUol.dll
+/Users/Nielsen/repossitory/TesteUol/DesafioUol/obj/Debug/netstandard2.0/DesafioUol.pdb
